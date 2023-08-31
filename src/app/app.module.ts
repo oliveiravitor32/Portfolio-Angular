@@ -11,30 +11,27 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { CardTecComponent } from './components/card-tec/card-tec.component';
 import { ArticleTitleAndDescriptionComponent } from './components/article-title-and-description/article-title-and-description.component';
-import { GreetingComponent } from './components/greeting/greeting.component';
 import { CardImageComponent } from './components/card-image/card-image.component';
 import { ContainerSocialMediaComponent } from './components/container-social-media/container-social-media.component';
+import { GreetingMessageComponent } from './components/greeting-message/greeting-message.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    ProjectsComponent,
-    HeaderComponent,
-    FooterComponent,
-    CardProjectComponent,
-    CardTecComponent,
-    ArticleTitleAndDescriptionComponent,
-    GreetingComponent,
-    CardImageComponent,
-    ContainerSocialMediaComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		AboutComponent,
+		ProjectsComponent,
+		HeaderComponent,
+		FooterComponent,
+		CardProjectComponent,
+		CardTecComponent,
+		ArticleTitleAndDescriptionComponent,
+		CardImageComponent,
+		ContainerSocialMediaComponent,
+		GreetingMessageComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
