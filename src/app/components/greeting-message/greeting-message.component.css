@@ -1,0 +1,30 @@
+.container-primary {
+	width: 60vw;
+	height: 45vh;
+	font-weight: bold;
+	color: #eaf8ec;
+	display: flex;
+}
+.container-text {
+	padding: 40px;
+	width: 55%;
+}
+.title {
+	font-size: 38px;
+}
+.text {
+	margin-top: 50px;
+	font-size: 30px;
+	color: #1a1281;
+}
+
+@media screen and (max-width: 1400px) {
+	.container-primary {
+		width: 80vw;
+	}
+}
+@media screen and (max-width: 900px) {
+	.container-primary {
+		width: 100vw;
+	}
+}
