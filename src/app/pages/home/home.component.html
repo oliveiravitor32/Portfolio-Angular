@@ -1,3 +1,13 @@
-<section class="section-home">
+<section class="section-greeting">
 	<app-greeting-message></app-greeting-message>
+</section>
+<section class="section-presentation">
+	<app-article-title-and-description
+		[title]="titleIntroduction"
+		[description]="descriptionIntroduction"
+	></app-article-title-and-description>
+	<app-article-title-and-description
+		[title]="titleSocialMedia"
+		[description]="descriptionSocialMedia"
+	></app-article-title-and-description>
 </section>

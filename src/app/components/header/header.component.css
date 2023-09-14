@@ -1,11 +1,11 @@
 .header {
 	width: 100%;
-	background-color: #20998f59;
+	background-color: #28658d81;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 15px 0;
-	position: absolute;
+	position: fixed;
 }
 
 .navbar {
@@ -16,12 +16,13 @@
 .container-links {
 	flex-grow: 0.3;
 	display: flex;
+	align-items: center;
 	justify-content: space-around;
 }
 
 .nav-link {
 	text-decoration: none;
-	color: #d8f3dc;
+	color: white;
 	font-weight: bold;
 	font-size: 22px;
 }

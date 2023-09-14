@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-article-title-and-description',
-  templateUrl: './article-title-and-description.component.html',
-  styleUrls: ['./article-title-and-description.component.css']
+	selector: 'app-article-title-and-description',
+	templateUrl: './article-title-and-description.component.html',
+	styleUrls: ['./article-title-and-description.component.css'],
 })
 export class ArticleTitleAndDescriptionComponent {
-
+	@Input() title = '';
+	@Input() description = '';
 }

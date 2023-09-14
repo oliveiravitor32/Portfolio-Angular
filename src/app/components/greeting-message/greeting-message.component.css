@@ -2,7 +2,7 @@
 	width: 60vw;
 	height: 45vh;
 	font-weight: bold;
-	color: #eaf8ec;
+	color: white;
 	display: flex;
 }
 .container-text {
@@ -12,10 +12,13 @@
 .title {
 	font-size: 38px;
 }
+.contrast-name {
+	color: #c7f9cc;
+}
 .text {
 	margin-top: 50px;
 	font-size: 30px;
-	color: #1a1281;
+	color: #c7f9cc;
 }
 
 @media screen and (max-width: 1400px) {
