@@ -1,7 +1,22 @@
 footer {
-	padding: 10px;
 	display: flex;
-	gap: 10px;
+	padding: 15px 0;
+	align-items: center;
 	background-color: #072c44;
 	color: white;
+	box-sizing: border-box;
+}
+.container-credits {
+	width: 45%;
+	padding: 0 15px;
+	text-align: center;
+}
+.container-credits a {
+	text-decoration: none;
+	color: #57cc99;
+}
+.social-media-component {
+	width: 10%;
+	display: flex;
+	justify-content: center;
 }

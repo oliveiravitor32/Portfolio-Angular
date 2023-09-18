@@ -12,4 +12,7 @@ export class HomeComponent {
 
 	titleSocialMedia: string = 'Entre em contato';
 	descriptionSocialMedia: string = 'Você pode saber mais sobre mim em';
+
+	primaryColor: string = '';
+	secundaryColor: string = '';
 }
