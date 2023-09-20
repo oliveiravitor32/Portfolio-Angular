@@ -11,7 +11,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { CardTecComponent } from './components/card-tec/card-tec.component';
 import { ArticleTitleAndDescriptionComponent } from './components/article-title-and-description/article-title-and-description.component';
-import { CardImageComponent } from './components/card-image/card-image.component';
 import { ContainerSocialMediaComponent } from './components/container-social-media/container-social-media.component';
 import { GreetingMessageComponent } from './components/greeting-message/greeting-message.component';
 
@@ -26,7 +25,6 @@ import { GreetingMessageComponent } from './components/greeting-message/greeting
 		CardProjectComponent,
 		CardTecComponent,
 		ArticleTitleAndDescriptionComponent,
-		CardImageComponent,
 		ContainerSocialMediaComponent,
 		GreetingMessageComponent,
 	],

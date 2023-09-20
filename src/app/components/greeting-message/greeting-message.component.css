@@ -1,13 +1,18 @@
 .container-primary {
-	width: 60vw;
-	height: 45vh;
+	margin-top: 200px;
+	width: 100%;
+	box-sizing: border-box;
+	height: auto;
 	font-weight: bold;
 	color: white;
 	display: flex;
+	justify-content: center;
 }
 .container-text {
-	padding: 40px;
-	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .title {
 	font-size: 38px;
@@ -21,13 +26,31 @@
 	color: #c7f9cc;
 }
 
-@media screen and (max-width: 1400px) {
-	.container-primary {
-		width: 80vw;
-	}
+.card-image {
+	width: 450px;
+}
+.card-image img {
+	width: 100%;
+	height: auto;
 }
 @media screen and (max-width: 900px) {
 	.container-primary {
-		width: 100vw;
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-image {
+		width: 420px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.title {
+		font-size: 28px;
+	}
+	.text {
+		font-size: 24px;
+	}
+	.card-image {
+		width: 360px;
 	}
 }

@@ -9,6 +9,9 @@
 	background-position: 0 0, 16px 16px;
 	background-color: #22577a;
 }
+.section-greeting .greeting-component {
+	width: 100%;
+}
 .section-presentation {
 	height: 80vh;
 	display: flex;
