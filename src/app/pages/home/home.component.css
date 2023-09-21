@@ -1,5 +1,5 @@
 .section-greeting {
-	height: 80vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13,7 +13,8 @@
 	width: 100%;
 }
 .section-presentation {
-	height: 80vh;
+	height: auto;
+	padding: 100px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -24,4 +25,10 @@
 	background-size: 32px 32px;
 	background-position: 0 0, 16px 16px;
 	background-color: #22577a;
+}
+.section-presentation .contacts-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 }

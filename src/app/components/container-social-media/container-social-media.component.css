@@ -3,10 +3,19 @@
 	display: flex;
 	gap: 15px;
 }
-
 .container-logo {
 	height: 100%;
 }
+.container-logo:hover {
+	border: 2px solid white;
+	border-radius: 5px;
+}
 .container-logo svg {
 	height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+	.container-social-media {
+		height: 30px;
+	}
 }

@@ -72,9 +72,8 @@
 		top: 70px;
 		background-color: #072c44;
 		padding: 0 0 20px 0;
-		animation: mobileMenuAnimationClose 0.3s ease-in-out;
-		transition: all 0.3s ease;
-		transform: translateX(-120%);
+		transition: all 0.3s cubic-bezier(0.44, 0.16, 0.66, 0.21);
+		left: -100%;
 	}
 	.mobile-menu-button {
 		display: block;
@@ -115,23 +114,6 @@
 	}
 	.container-links.-open {
 		display: flex;
-		animation: mobileMenuAnimationOpen 0.3s ease-in-out;
-		transform: translateX(-4%);
-	}
-	@keyframes mobileMenuAnimationOpen {
-		from {
-			transform: translateX(-120%);
-		}
-		to {
-			transform: translateX(0%);
-		}
-	}
-	@keyframes mobileMenuAnimationClose {
-		from {
-			transform: translateX(0%);
-		}
-		to {
-			transform: translateX(-120%);
-		}
+		left: 0;
 	}
 }
