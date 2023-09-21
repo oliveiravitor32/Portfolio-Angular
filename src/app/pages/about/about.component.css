@@ -1,0 +1,48 @@
+.section-introduction {
+	height: auto;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#37a2a4 0,
+		#37a2a4 1px,
+		transparent 0,
+		transparent 50%
+	);
+	background-size: 32px 32px;
+	background-color: #22577a;
+}
+.section-technologies {
+	border-top: 1px solid rgb(55, 162, 164);
+	height: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#37a2a4 0,
+		#37a2a4 1px,
+		transparent 0,
+		transparent 50%
+	);
+	background-size: 32px 32px;
+	background-color: #22577a;
+}
+.title {
+	font-size: 36px;
+	font-weight: 500;
+	color: #57cc99;
+}
+.card-image {
+	width: 450px;
+}
+.card-image img {
+	width: 100%;
+	height: auto;
+}

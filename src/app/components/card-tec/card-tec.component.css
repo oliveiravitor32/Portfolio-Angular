@@ -1,0 +1,40 @@
+.card {
+	width: 225px;
+	height: 200px;
+	border-radius: 19px;
+	background-color: rgb(233, 229, 229);
+}
+.card figure {
+	height: 80%;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	color: #22577a;
+}
+.card figure img {
+	width: 100px;
+	height: 100px;
+}
+.container-stars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	color: white;
+}
+.container-stars svg {
+	font-size: 15px;
+	font-weight: bold;
+	width: 26px;
+	height: 26px;
+	fill: transparent;
+	stroke: rgb(122, 122, 122);
+}
+.container-stars svg.-fillStar > path {
+	fill: #22577a;
+	stroke: #22577a;
+}

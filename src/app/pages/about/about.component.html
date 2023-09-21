@@ -1,1 +1,47 @@
-<p>about works!</p>
+<section class="section-introduction">
+	<app-article-title-and-description
+		[title]="titleAbout"
+		[description]="descriptionAbout"
+	></app-article-title-and-description>
+	<div class="card-image">
+		<img
+			src="../../../assets/Code-rafiki.svg"
+			alt="Imagem de um personagem programando em um computador."
+		/>
+	</div>
+</section>
+<section class="section-technologies">
+	<h1 class="title">Tecnologias que uso</h1>
+	<div>
+		<app-card-tec
+			[starCount]="cardStars_1"
+			[cardTitle]="cardTitle_1"
+			[cardImage]="cardImage_1"
+		></app-card-tec>
+		<app-card-tec
+			[starCount]="cardStars_2"
+			[cardTitle]="cardTitle_2"
+			[cardImage]="cardImage_2"
+		></app-card-tec>
+		<app-card-tec
+			[starCount]="cardStars_3"
+			[cardTitle]="cardTitle_3"
+			[cardImage]="cardImage_3"
+		></app-card-tec>
+		<app-card-tec
+			[starCount]="cardStars_4"
+			[cardTitle]="cardTitle_4"
+			[cardImage]="cardImage_4"
+		></app-card-tec>
+		<app-card-tec
+			[starCount]="cardStars_5"
+			[cardTitle]="cardTitle_5"
+			[cardImage]="cardImage_5"
+		></app-card-tec>
+		<app-card-tec
+			[starCount]="cardStars_6"
+			[cardTitle]="cardTitle_6"
+			[cardImage]="cardImage_6"
+		></app-card-tec>
+	</div>
+</section>
