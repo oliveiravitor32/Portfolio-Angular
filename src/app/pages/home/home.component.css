@@ -25,6 +25,7 @@
 	background-size: 32px 32px;
 	background-position: 0 0, 16px 16px;
 	background-color: #22577a;
+	border-top: 1px solid rgb(55, 162, 164);
 }
 .section-presentation .contacts-container {
 	display: flex;

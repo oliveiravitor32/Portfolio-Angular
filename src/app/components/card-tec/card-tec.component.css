@@ -1,8 +1,13 @@
 .card {
-	width: 225px;
-	height: 200px;
+	width: 200px;
+	height: 190px;
 	border-radius: 19px;
-	background-color: rgb(233, 229, 229);
+	background-color: #072c44;
+	border: 2px solid #4dcbbd;
+}
+.card:hover {
+	transform: scale(0.9);
+	cursor: pointer;
 }
 .card figure {
 	height: 80%;
@@ -13,11 +18,11 @@
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
-	color: #22577a;
+	color: white;
 }
 .card figure img {
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 }
 .container-stars {
 	display: flex;
@@ -35,6 +40,28 @@
 	stroke: rgb(122, 122, 122);
 }
 .container-stars svg.-fillStar > path {
-	fill: #22577a;
-	stroke: #22577a;
+	fill: white;
+	stroke: white;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		width: 152px;
+		height: 142px;
+	}
+	.card figure img {
+		width: 70px;
+		height: 70px;
+	}
+	.card figure {
+		font-size: 16px;
+	}
+	.container-stars svg {
+		font-size: 15px;
+		font-weight: bold;
+		width: 20px;
+		height: 20px;
+		fill: transparent;
+		stroke: rgb(122, 122, 122);
+	}
 }

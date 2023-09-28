@@ -3,7 +3,7 @@
 		<img src="{{ cardImage }}" alt="" />
 		<figcaption>{{ cardTitle }}</figcaption>
 	</figure>
-	<div class="container-stars">
+	<div class="container-stars" *ngIf="starCount >= 1">
 		<svg
 			width="40"
 			height="38"
