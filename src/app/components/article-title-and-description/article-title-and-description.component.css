@@ -33,5 +33,6 @@ article p {
 	}
 	article p {
 		max-width: 90vw;
+		font-size: 18px;
 	}
 }

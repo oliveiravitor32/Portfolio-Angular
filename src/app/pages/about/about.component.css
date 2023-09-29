@@ -1,18 +1,18 @@
 .section-introduction {
 	height: auto;
-	padding: 100px 0;
+	padding: 100px 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 100px;
+	gap: 50px;
 	background-image: repeating-linear-gradient(
-		45deg,
-		#37a2a4 0,
-		#37a2a4 1px,
-		transparent 0,
-		transparent 50%
+		to right,
+		#37a2a4,
+		#37a2a4 1.5px,
+		transparent 1.5px,
+		transparent
 	);
-	background-size: 32px 32px;
+	background-size: 27px 27px;
 	background-color: #22577a;
 	border-bottom: 1px solid rgb(55, 162, 164);
 }
@@ -25,13 +25,13 @@
 	align-items: center;
 	gap: 100px;
 	background-image: repeating-linear-gradient(
-		45deg,
-		#37a2a4 0,
-		#37a2a4 1px,
-		transparent 0,
-		transparent 50%
+		to right,
+		#37a2a4,
+		#37a2a4 1.5px,
+		transparent 1.5px,
+		transparent
 	);
-	background-size: 32px 32px;
+	background-size: 27px 27px;
 	background-color: #22577a;
 }
 .title {
@@ -54,6 +54,21 @@
 	justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+	.section-introduction {
+		flex-direction: column;
+		gap: 0;
+		padding: 100px 0;
+	}
+	.card-image {
+		width: 420px;
+	}
+}
+@media screen and (max-width: 620px) {
+	.card-image {
+		width: 360px;
+	}
+}
 @media screen and (max-width: 500px) {
 	.container-card-tecs {
 		gap: 15px;
