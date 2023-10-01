@@ -1,6 +1,29 @@
-# Portfolio
+# Portfólio PT-BR
 
-# Acompanhe o desenvolvimento do Portfólio em https://angular-portfolio-oliveiravitor32.vercel.app/
+Projeto de um web site portfólio para meu perfil desenvolvido utilizando Angular com navegação de página única, pagina responsiva e componentes para fácil manutenção.
+
+## Características
+- Navegação single page
+- Página responsiva
+- Utilização de componentes
+
+## Projeto online
+https://angular-portfolio-oliveiravitor32.vercel.app/
+
+
+# Portfolio EN
+
+Project of a portfolio website for my profile developed using Angular with single page navigation, responsive page and components for easy maintenance.
+
+## Features
+- Single page application
+- Responsive page
+- Components
+
+## Demo project
+https://angular-portfolio-oliveiravitor32.vercel.app/
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
