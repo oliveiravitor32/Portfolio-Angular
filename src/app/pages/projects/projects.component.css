@@ -1,15 +1,20 @@
 .section-projects {
 	height: auto;
-	padding: 100px 0;
-	padding-bottom: 700px;
+	padding: 150px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 100px;
+	gap: 120px;
 	background-image: linear-gradient(#37a2a4 1.5px, transparent 1.5px),
 		linear-gradient(to right, #37a2a4 1.5px, transparent 1.5px);
 	background-size: 32px 32px;
 	background-color: #22577a;
 	border-bottom: 1px solid rgb(55, 162, 164);
+}
+.container-projects {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	flex-wrap: wrap;
 }

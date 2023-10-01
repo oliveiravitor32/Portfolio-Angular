@@ -1,14 +1,13 @@
 <article class="card-project">
-	<div class="container-img"><img src="" alt="" /></div>
+	<div class="container-img"><img src="{{ image }}" alt="" /></div>
 	<div class="container-card-info">
-		<h2>title</h2>
+		<h2>{{ title }}</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam
-			beatae eveniet distinctio itaque! Pariatur illo excepturi, laborum aperiam
+			{{ description }}
 		</p>
 		<div class="container-buttons">
-			<a class="button">Código</a>
-			<a class="button">Demo</a>
+			<a href="{{ codeLink }}" class="button">Código</a>
+			<a href="{{ demoLink }}" class="button">Demo</a>
 		</div>
 	</div>
 </article>
