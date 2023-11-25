@@ -7,7 +7,7 @@ Projeto de um web site portfólio para meu perfil desenvolvido utilizando Angula
 - Página responsiva
 - Utilização de componentes
 
-## Projeto online
+## Demo
 https://angular-portfolio-oliveiravitor32.vercel.app/
 
 
@@ -20,7 +20,7 @@ Project of a portfolio website for my profile developed using Angular with singl
 - Responsive page
 - Components
 
-## Demo project
+## Demo
 https://angular-portfolio-oliveiravitor32.vercel.app/
 
 
