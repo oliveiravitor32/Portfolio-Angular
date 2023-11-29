@@ -12,7 +12,7 @@ export class ProjectsComponent {
 
 	imageProject_angular_pokedex: string = '../../../assets/angular-pokedex.png';
 	titleProject_angular_pokedex: string = 'Angular-Pokédex';
-	descriptionProject_angular_pokedex: string = 'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon) Este projeto conta com boas praticas na utilização de service para requisição em API e tratamento de dados para cada componentes, página responsiva e componentes para fácil manutenção.';
+	descriptionProject_angular_pokedex: string = 'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon).';
 	codeLink_angular_pokedex: string = 'https://github.com/oliveiravitor32/angular-pokedex';
 	demoLink_angular_pokedex: string = 'https://angular-pokedex-oliveiravitor32.vercel.app/';
 
