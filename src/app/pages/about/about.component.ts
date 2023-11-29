@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
 	titleAbout: string = 'Sobre mim';
 	descriptionAbout: string =
-		'Me chamo Vitor Oliveira sou estudante de programação desde 2022 focado em desenvolvimento front-end com experiências em HTML5, CSS3, JavaScript, Git, Angular e React desenvolvidas em cursos online, projetos em meu GitHub e também com o ensino superior onde atualmente estou cursando Ciências da Computação na Universidade Paulista (Unip).';
+		'Desde 2022, tenho dedicado minha trajetória acadêmica ao estudo da programação, concentrando-me no desenvolvimento front-end. Adquiri experiência em tecnologias essenciais para o desenvolvimento web por meio de cursos online, projetos registrados em meu repositório GitHub e, de maneira complementar, durante meu ensino superior, onde atualmente estou cursando Ciência da Computação.';
 
 	cardStars_1: number = 4;
 	cardTitle_1: string = 'HTML5';
