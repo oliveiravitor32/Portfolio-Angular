@@ -10,6 +10,9 @@ Projeto de um web site portfólio para meu perfil desenvolvido utilizando Angula
 ## Demo
 https://angular-portfolio-oliveiravitor32.vercel.app/
 
+## Créditos
+Inspirado no portfólio de <a href="https://soumyajit.vercel.app/" target="_blank">Soumyajit Behera</a> 
+Imagens retiradas de: <a href="https://storyset.com/technology" target="_blank">Technology illustrations by Storyset</a> 
 
 # Portfolio EN
 
@@ -23,6 +26,9 @@ Project of a portfolio website for my profile developed using Angular with singl
 ## Demo
 https://angular-portfolio-oliveiravitor32.vercel.app/
 
+## Credits
+Inspired by the portfolio of <a href="https://soumyajit.vercel.app/" target="_blank">Soumyajit Behera</a> 
+Images taken from: <a href="https://storyset.com/technology" target="_blank">Technology illustrations by Storyset</a> 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
