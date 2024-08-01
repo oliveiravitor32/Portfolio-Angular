@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CardTecComponent {
 	colorStarFill: string = '';
-	@Input() starCount: number = 1;
+	@Input() starCount: number = 0;
 	@Input() cardTitle: string = '';
 	@Input() cardImage: string = '';
 }

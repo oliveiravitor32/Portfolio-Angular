@@ -12,9 +12,35 @@
 	background-color: #22577a;
 	border-bottom: 1px solid rgb(55, 162, 164);
 }
+.featured-project h3 {
+	color: white;
+	font-size: 21px;
+	background-color: #072c44;
+	padding: 6px 0;
+	width: auto;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
 .container-projects {
 	display: flex;
 	justify-content: center;
 	gap: 100px;
 	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1400px) {
+	.section-projects {
+		gap: 60px;
+	}
+	.container-projects {
+		gap: 40px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-projects {
+		gap: 40px;
+	}
 }

@@ -19,7 +19,6 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 100px;
 	background-image: radial-gradient(#38a3a5 1px, transparent 1px),
 		radial-gradient(#38a3a5 1px, transparent 1px);
 	background-size: 32px 32px;

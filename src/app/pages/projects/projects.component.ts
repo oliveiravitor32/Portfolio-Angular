@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProjectData } from 'src/app/interfaces/project-data.interface';
 
 @Component({
 	selector: 'app-projects',
@@ -8,42 +9,69 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 	titleMain: string = 'Projetos';
 	descriptionMain: string =
-		'Está área contém alguns de meus projetos destaques.';
+		'Esta área apresenta alguns dos meus projetos mais elaborados.';
 
-	imageProject_angular_pokedex: string = '../../../assets/angular-pokedex.png';
-	titleProject_angular_pokedex: string = 'Angular-Pokédex';
-	descriptionProject_angular_pokedex: string = 'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon).';
-	codeLink_angular_pokedex: string = 'https://github.com/oliveiravitor32/angular-pokedex';
-	demoLink_angular_pokedex: string = 'https://angular-pokedex-oliveiravitor32.vercel.app/';
+	// project: IProjectData = {
+	// 	img_url: ,
+	// 	title: ,
+	// 	description:
+	// 		,
+	// 	code_url: ,
+	// 	demo_url: ,
+	// };
 
-	imageProject_1: string = '../../../assets/NoteAppAngular.png';
-	titleProject_1: string = 'Angular - Note App';
-	descriptionProject_1: string =
-		'Projeto Bloco de Notas (NoteApp) construído utilizando Angular com navegação de página única (single page application) e possibilita buscas por notas, criar, deletar e editar notas.';
-	codeLink_1: string = 'https://github.com/oliveiravitor32/Note-App';
-	demoLink_1: string = 'https://note-app-oliveiravitor32.vercel.app/';
+	project_game_library: IProjectData = {
+		img_url: '../../../assets/project_game_library.png',
+		title: 'Biblioteca de jogos - Angular',
+		description:
+			'O projeto Biblioteca de Jogos é um website desenvolvido em Angular 17, integrado com a API RAWG Video Games Database.',
+		code_url: 'https://github.com/oliveiravitor32/Biblioteca_de_Jogos-Angular',
+		demo_url:
+			'https://biblioteca-de-jogos-angular-oliveiravitor32s-projects.vercel.app/',
+	};
 
-	imageProject_2: string = '../../../assets/ShoppingCartReactJs.png';
-	titleProject_2: string = 'React - Shopping Cart';
-	descriptionProject_2: string =
-		'Projeto Carrinho de Compras (Shopping Cart) construído com ReactJS utilizando a API do Mercado Livre, desenvolvido com o canal Manual do Dev no Youtube.';
-	codeLink_2: string =
-		'https://github.com/oliveiravitor32/shopping-cart-reactjs';
-	demoLink_2: string =
-		'https://shopping-cart-reactjs-oliveiravitor32.vercel.app/';
+	project_pokedex_angular: IProjectData = {
+		img_url: '../../../assets/project_pokedex_angular.png',
+		title: 'Pokédex - Angular',
+		description:
+			'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon).',
+		code_url: 'https://github.com/oliveiravitor32/angular-pokedex',
+		demo_url: 'https://angular-pokedex-oliveiravitor32.vercel.app/',
+	};
 
-	imageProject_3: string = '../../../assets/ToDoListReactJs.png';
-	titleProject_3: string = 'React - To Do List';
-	descriptionProject_3: string =
-		'Simples projeto de uma lista de tarefas(To Do List) utilizando ReactJS, que permite criar, concluir, editar, e também deletar tarefas.';
-	codeLink_3: string = 'https://github.com/oliveiravitor32/ToDoList-ReactJS';
-	demoLink_3: string =
-		'https://to-do-list-react-js-oliveiravitor32.vercel.app/';
+	project_note_app_angular: IProjectData = {
+		img_url: '../../../assets/project_note_app_angular.png',
+		title: 'Note App - Angular',
+		description:
+			'Projeto Bloco de Notas (NoteApp) construído utilizando Angular com navegação de página única (single page application) e possibilita buscas por notas, criar, deletar e editar notas.',
+		code_url: 'https://github.com/oliveiravitor32/Note-App',
+		demo_url: 'https://note-app-oliveiravitor32.vercel.app/',
+	};
 
-	imageProject_4: string = '../../../assets/antigoPortfolio.png';
-	titleProject_4: string = 'Antigo portfólio';
-	descriptionProject_4: string =
-		'Antigo portfólio com página responsiva, implementações de animações via CSS e JS e com formulário funcional. Desenvolvido com o curso "Html-Css-Feliz" de Marco Bruno Dev no Youtube. ';
-	codeLink_4: string = 'https://github.com/oliveiravitor32/Antigo-Portfolio';
-	demoLink_4: string = 'https://oliveiravitor32.github.io/Antigo-Portfolio/';
+	project_shopping_cart_react: IProjectData = {
+		img_url: '../../../assets/project_shopping_cart_react.png',
+		title: 'Shopping Cart - React',
+		description:
+			'Projeto Carrinho de Compras (Shopping Cart) construído com ReactJS utilizando a API do Mercado Livre, desenvolvido com o canal Manual do Dev no Youtube.',
+		code_url: 'https://github.com/oliveiravitor32/shopping-cart-reactjs',
+		demo_url: 'https://shopping-cart-reactjs-oliveiravitor32.vercel.app/',
+	};
+
+	project_to_do_list_react: IProjectData = {
+		img_url: '../../../assets/project_to_do_list_react.png',
+		title: 'To Do List - React',
+		description:
+			'Simples projeto de uma lista de tarefas(To Do List) utilizando ReactJS, que permite criar, concluir, editar, e também deletar tarefas.',
+		code_url: 'https://github.com/oliveiravitor32/ToDoList-ReactJS',
+		demo_url: 'https://to-do-list-react-js-oliveiravitor32.vercel.app/',
+	};
+
+	project_old_portfolio: IProjectData = {
+		img_url: '../../../assets/project_old_porfolio.png',
+		title: 'Antigo portfólio',
+		description:
+			'Meu antigo portfólio com página responsiva, implementações de animações via CSS e JS e com formulário funcional. Desenvolvido com o curso "Html-Css-Feliz" de Marco Bruno Dev no Youtube. ',
+		code_url: 'https://github.com/oliveiravitor32/Antigo-Portfolio',
+		demo_url: 'https://oliveiravitor32.github.io/Antigo-Portfolio/',
+	};
 }

@@ -73,4 +73,8 @@
 	.container-card-tecs {
 		gap: 15px;
 	}
+
+	.card-image {
+		width: 300px;
+	}
 }

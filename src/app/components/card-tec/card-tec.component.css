@@ -4,6 +4,7 @@
 	border-radius: 19px;
 	background-color: #072c44;
 	border: 2px solid #4dcbbd;
+	padding: 5px;
 }
 .card:hover {
 	transform: scale(0.98);
@@ -46,7 +47,7 @@
 
 @media screen and (max-width: 500px) {
 	.card {
-		width: 152px;
+		width: 160px;
 		height: 142px;
 	}
 	.card figure img {

@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 	titleIntroduction: string = 'Breve introdução sobre mim';
 	descriptionIntroduction: string =
-		'Inicialmente, expresso meus agradecimentos por acessar o meu portfólio. Permita-me, então, apresentar-me. Tenho 19 anos e sou estudante de programação desde 2022, com foco no desenvolvimento front-end. Atualmente, estou matriculado no curso de Ciências da Computação na Universidade Paulista - UNIP. Busco ativamente uma oportunidade no mercado de trabalho para aprimorar minha trajetória profissional como desenvolvedor.';
+		'Inicialmente, expresso meus agradecimentos por acessar o meu portfólio. Permita-me, então, apresentar-me. Tenho 20 anos e sou estudante de programação desde 2022, com foco no desenvolvimento front-end. Atualmente, estou matriculado no curso de Ciências da Computação na Universidade Paulista - UNIP. Busco ativamente uma oportunidade no mercado de trabalho para aprimorar minha trajetória profissional como desenvolvedor.';
 
 	titleSocialMedia: string = 'Entre em contato';
 	descriptionSocialMedia: string = 'Você pode saber mais sobre mim em: ';
-
-	primaryColor: string = '';
-	secundaryColor: string = '';
 }

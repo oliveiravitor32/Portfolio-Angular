@@ -4,41 +4,18 @@
 		[description]="descriptionMain"
 	>
 	</app-article-title-and-description>
+
 	<div class="container-projects">
+		<div class="featured-project">
+			<h3>Projeto destaque!</h3>
+			<app-card-project [project]="project_game_library"></app-card-project>
+		</div>
+		<app-card-project [project]="project_pokedex_angular"></app-card-project>
+		<app-card-project [project]="project_note_app_angular"></app-card-project>
 		<app-card-project
-			[image]="imageProject_angular_pokedex"
-			[title]="titleProject_angular_pokedex"
-			[description]="descriptionProject_angular_pokedex"
-			[codeLink]="codeLink_angular_pokedex"
-			[demoLink]="demoLink_angular_pokedex"
+			[project]="project_shopping_cart_react"
 		></app-card-project>
-		<app-card-project
-			[image]="imageProject_1"
-			[title]="titleProject_1"
-			[description]="descriptionProject_1"
-			[codeLink]="codeLink_1"
-			[demoLink]="demoLink_1"
-		></app-card-project>
-		<app-card-project
-			[image]="imageProject_2"
-			[title]="titleProject_2"
-			[description]="descriptionProject_2"
-			[codeLink]="codeLink_2"
-			[demoLink]="demoLink_2"
-		></app-card-project>
-		<app-card-project
-			[image]="imageProject_3"
-			[title]="titleProject_3"
-			[description]="descriptionProject_3"
-			[codeLink]="codeLink_3"
-			[demoLink]="demoLink_3"
-		></app-card-project>
-		<app-card-project
-			[image]="imageProject_4"
-			[title]="titleProject_4"
-			[description]="descriptionProject_4"
-			[codeLink]="codeLink_4"
-			[demoLink]="demoLink_4"
-		></app-card-project>
+		<app-card-project [project]="project_to_do_list_react"></app-card-project>
+		<app-card-project [project]="project_old_portfolio"></app-card-project>
 	</div>
 </section>

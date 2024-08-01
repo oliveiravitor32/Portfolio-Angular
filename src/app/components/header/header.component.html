@@ -1,18 +1,18 @@
 <header class="header">
 	<nav class="navbar">
 		<a class="nav-link -logo" href="">Portfólio</a>
-		<div #containerLinks class="container-links">
+		<div
+			class="container-links"
+			[ngClass]="{ 'mobile-menu-open': isMobileMenuOpen }"
+		>
 			<a class="nav-link" routerLink="/">Inicio</a>
 			<a class="nav-link" routerLink="/sobre">Sobre</a>
 			<a class="nav-link" routerLink="/projetos">Projetos</a>
 		</div>
 		<button
-			#menuMobile
 			class="mobile-menu-button"
-			(click)="
-				menuMobile.classList.toggle('-open');
-				containerLinks.classList.toggle('-open')
-			"
+			[ngClass]="{ 'mobile-menu-open': isMobileMenuOpen }"
+			(click)="onToggleMobileMenu()"
 		>
 			<span></span>
 			<span></span>

@@ -1,13 +1,13 @@
 <article class="card-project">
-	<div class="container-img"><img src="{{ image }}" alt="" /></div>
+	<div class="container-img"><img src="{{ project.img_url }}" alt="" /></div>
 	<div class="container-card-info">
-		<h2>{{ title }}</h2>
+		<h2>{{ project.title }}</h2>
 		<p>
-			{{ description }}
+			{{ project.description }}
 		</p>
 		<div class="container-buttons">
-			<a href="{{ codeLink }}" class="button" target="_blank">Código</a>
-			<a href="{{ demoLink }}" class="button" target="_blank">Demo</a>
+			<a href="{{ project.code_url }}" class="button" target="_blank">Código</a>
+			<a href="{{ project.demo_url }}" class="button" target="_blank">Demo</a>
 		</div>
 	</div>
 </article>

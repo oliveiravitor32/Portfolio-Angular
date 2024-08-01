@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IProjectData } from 'src/app/interfaces/project-data.interface';
 
 @Component({
 	selector: 'app-card-project',
@@ -6,9 +7,5 @@ import { Component, Input } from '@angular/core';
 	styleUrls: ['./card-project.component.css'],
 })
 export class CardProjectComponent {
-	@Input() image: string = '';
-	@Input() title: string = '';
-	@Input() description: string = '';
-	@Input() codeLink: string = '';
-	@Input() demoLink: string = '';
+	@Input() project: IProjectData = {} as IProjectData;
 }
