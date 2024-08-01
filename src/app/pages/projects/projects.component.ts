@@ -35,34 +35,34 @@ export class ProjectsComponent {
 		title: 'Pokédex - Angular',
 		description:
 			'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon).',
-		code_url: 'https://github.com/oliveiravitor32/angular-pokedex',
-		demo_url: 'https://angular-pokedex-oliveiravitor32.vercel.app/',
+		code_url: 'https://github.com/oliveiravitor32/Pokedex-Angular',
+		demo_url: 'https://angular-pokedex-umber.vercel.app/',
 	};
 
 	project_note_app_angular: IProjectData = {
 		img_url: '../../../assets/project_note_app_angular.png',
-		title: 'Note App - Angular',
+		title: 'Lista de tarefas - Angular',
 		description:
 			'Projeto Bloco de Notas (NoteApp) construído utilizando Angular com navegação de página única (single page application) e possibilita buscas por notas, criar, deletar e editar notas.',
-		code_url: 'https://github.com/oliveiravitor32/Note-App',
+		code_url: 'https://github.com/oliveiravitor32/Lista_de_tarefas-Angular',
 		demo_url: 'https://note-app-oliveiravitor32.vercel.app/',
 	};
 
 	project_shopping_cart_react: IProjectData = {
 		img_url: '../../../assets/project_shopping_cart_react.png',
-		title: 'Shopping Cart - React',
+		title: 'Carrinho de compras - React',
 		description:
 			'Projeto Carrinho de Compras (Shopping Cart) construído com ReactJS utilizando a API do Mercado Livre, desenvolvido com o canal Manual do Dev no Youtube.',
-		code_url: 'https://github.com/oliveiravitor32/shopping-cart-reactjs',
+		code_url: 'https://github.com/oliveiravitor32/Carrinho_de_compras-React',
 		demo_url: 'https://shopping-cart-reactjs-oliveiravitor32.vercel.app/',
 	};
 
 	project_to_do_list_react: IProjectData = {
 		img_url: '../../../assets/project_to_do_list_react.png',
-		title: 'To Do List - React',
+		title: 'Lista de tarefas - React',
 		description:
 			'Simples projeto de uma lista de tarefas(To Do List) utilizando ReactJS, que permite criar, concluir, editar, e também deletar tarefas.',
-		code_url: 'https://github.com/oliveiravitor32/ToDoList-ReactJS',
+		code_url: 'https://github.com/oliveiravitor32/Lista_de_tarefas-React',
 		demo_url: 'https://to-do-list-react-js-oliveiravitor32.vercel.app/',
 	};
 
@@ -71,7 +71,7 @@ export class ProjectsComponent {
 		title: 'Antigo portfólio',
 		description:
 			'Meu antigo portfólio com página responsiva, implementações de animações via CSS e JS e com formulário funcional. Desenvolvido com o curso "Html-Css-Feliz" de Marco Bruno Dev no Youtube. ',
-		code_url: 'https://github.com/oliveiravitor32/Antigo-Portfolio',
-		demo_url: 'https://oliveiravitor32.github.io/Antigo-Portfolio/',
+		code_url: 'https://github.com/oliveiravitor32/Antigo_Portfolio',
+		demo_url: 'https://oliveiravitor32.github.io/Antigo_Portfolio/',
 	};
 }

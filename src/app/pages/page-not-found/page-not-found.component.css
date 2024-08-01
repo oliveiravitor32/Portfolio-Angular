@@ -1,0 +1,17 @@
+.container {
+	min-height: 700px;
+	color: rgb(87, 204, 153);
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	flex-direction: column;
+	background-color: rgb(34, 87, 122);
+	text-align: center;
+	gap: 10px;
+}
+
+a {
+	color: #19a994;
+}

@@ -13,6 +13,7 @@ import { CardTecComponent } from './components/card-tec/card-tec.component';
 import { ArticleTitleAndDescriptionComponent } from './components/article-title-and-description/article-title-and-description.component';
 import { ContainerSocialMediaComponent } from './components/container-social-media/container-social-media.component';
 import { GreetingMessageComponent } from './components/greeting-message/greeting-message.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
 	declarations: [
@@ -27,6 +28,7 @@ import { GreetingMessageComponent } from './components/greeting-message/greeting
 		ArticleTitleAndDescriptionComponent,
 		ContainerSocialMediaComponent,
 		GreetingMessageComponent,
+  PageNotFoundComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
