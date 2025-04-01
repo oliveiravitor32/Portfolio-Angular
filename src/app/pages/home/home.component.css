@@ -1,17 +1,9 @@
-.section-greeting {
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: radial-gradient(#38a3a5 1px, transparent 1px),
-		radial-gradient(#38a3a5 1px, transparent 1px);
-	background-size: 32px 32px;
-	background-position: 0 0, 16px 16px;
-	background-color: #22577a;
+.container {
+	max-width: 48rem;
+	padding-top: 120px;
+	margin: 0 auto;
 }
-.section-greeting .greeting-component {
-	width: 100%;
-}
+
 .section-presentation {
 	height: auto;
 	padding: 100px 0;

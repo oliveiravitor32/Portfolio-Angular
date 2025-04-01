@@ -8,7 +8,7 @@
 .profile-card__details-wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 1rem;
 }
 
 .profile-card__image {
@@ -16,7 +16,7 @@
 }
 
 .profile-card__title {
-	font-size: 2.25rem;
+	font-size: 3rem;
 	color: var(--text-primary);
 }
 
@@ -41,13 +41,13 @@
 }
 
 .profile-card__icon {
-	color: var(--text-primary);
+	fill: var(--text-primary);
 }
 
 .profile-card__action-link--button {
 	background-color: var(--bg-primary);
 	border: 2px solid var(--bg-secondary);
-	padding: 0.25rem 1rem;
+	padding: 0.5rem 1rem;
 	border-radius: 5px;
 }
 
