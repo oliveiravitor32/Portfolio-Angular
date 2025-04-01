@@ -14,6 +14,7 @@ import { ArticleTitleAndDescriptionComponent } from './components/article-title-
 import { ContainerSocialMediaComponent } from './components/container-social-media/container-social-media.component';
 import { GreetingMessageComponent } from './components/greeting-message/greeting-message.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 
 @NgModule({
 	declarations: [
@@ -28,7 +29,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 		ArticleTitleAndDescriptionComponent,
 		ContainerSocialMediaComponent,
 		GreetingMessageComponent,
-  PageNotFoundComponent,
+		PageNotFoundComponent,
+		ThemeToggleComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
