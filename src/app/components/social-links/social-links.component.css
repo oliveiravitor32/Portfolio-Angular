@@ -1,0 +1,14 @@
+.social-links {
+	display: flex;
+	gap: 1.4rem;
+}
+
+.social-links__icon {
+	width: 1.7rem;
+	height: 1.7rem;
+	fill: var(--text-secondary);
+}
+
+.social-links__icon:hover {
+	fill: var(--text-primary);
+}

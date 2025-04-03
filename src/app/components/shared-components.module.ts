@@ -5,6 +5,7 @@ import { CardProjectComponent } from './card-project/card-project.component';
 import { CardTecComponent } from './card-tec/card-tec.component';
 import { ContainerSocialMediaComponent } from './container-social-media/container-social-media.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 		ContainerSocialMediaComponent,
 		ThemeToggleComponent,
 		ProfileCardComponent,
+		SocialLinksComponent,
 	],
 	imports: [CommonModule, NgOptimizedImage],
 	exports: [

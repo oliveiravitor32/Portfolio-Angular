@@ -24,15 +24,15 @@
 	color: var(--text-primary);
 }
 
-.profile-card__links-list {
+.profile-card__actions-wrapper {
 	margin-top: 1.5rem;
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .profile-card__action-link {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
 	color: var(--text-primary);
