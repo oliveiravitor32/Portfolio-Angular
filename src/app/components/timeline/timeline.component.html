@@ -1,0 +1,12 @@
+<div class="timeline">
+	<ul class="timeline__list">
+		<li>
+			<app-timeline-item [item]="educationData.degree"></app-timeline-item>
+		</li>
+		<li
+			*ngFor="let certification of educationData.certifications; let i = index"
+		>
+			<app-timeline-item [item]="certification"></app-timeline-item>
+		</li>
+	</ul>
+</div>

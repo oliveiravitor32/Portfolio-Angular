@@ -4,23 +4,6 @@
 	margin: 0 auto;
 }
 
-.section-presentation {
-	height: auto;
-	padding: 100px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	background-image: radial-gradient(#38a3a5 1px, transparent 1px),
-		radial-gradient(#38a3a5 1px, transparent 1px);
-	background-size: 32px 32px;
-	background-position: 0 0, 16px 16px;
-	background-color: #22577a;
-	border-top: 1px solid rgb(55, 162, 164);
-}
-.section-presentation .contacts-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 15px;
+.container__experience-section {
+	margin: 4rem 0;
 }

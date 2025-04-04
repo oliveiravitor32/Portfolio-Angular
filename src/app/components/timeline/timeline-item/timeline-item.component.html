@@ -1,0 +1,21 @@
+<div class="timeline-item">
+	<div class="timeline-item__logo-wrapper">
+		<img
+			class="timeline-item__logo"
+			[ngSrc]="item.logoUrl"
+			[alt]="'Logo da instituição ' + item.institution_name"
+			width="46"
+			height="46"
+			loading="lazy"
+		/>
+	</div>
+	<div class="timeline-item__content">
+		<span class="timeline-item__time-period">{{
+			item.timePeriod ? item.status + ": " + item.timePeriod : item.status
+		}}</span>
+		<h3 class="timeline-item__institution-name">
+			{{ item.institution_name }}
+		</h3>
+		<p class="timeline-item__program-title">{{ item.program_title }}</p>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+.timeline {
+	padding: 1rem;
+}
+
+.timeline__list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}

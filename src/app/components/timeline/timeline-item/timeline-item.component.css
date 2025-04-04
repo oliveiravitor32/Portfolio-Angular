@@ -1,0 +1,40 @@
+.timeline-item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.timeline-item__institution-name {
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.1rem 0;
+	color: var(--text-primary);
+}
+
+.timeline-item__program-title {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--text-secondary);
+}
+
+.timeline-item__time-period {
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--text-secondary);
+}
+
+.timeline-item__logo {
+	height: auto;
+	border-radius: 10px;
+	background-color: var(--bg-primary);
+}
+
+.timeline-item__logo-wrapper {
+	display: flex;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	border: 2px solid var(--bg-secondary);
+	border-radius: 10px;
+}
