@@ -12,6 +12,7 @@
 :root {
 	/* Common variables (used in both themes) */
 	--transition-speed: 0.3s;
+	--max-body-width: 768px;
 }
 
 /*

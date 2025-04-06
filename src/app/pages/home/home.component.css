@@ -1,9 +1,15 @@
-.container {
-	max-width: 48rem;
+.main-container {
+	max-width: var(--max-body-width);
 	padding-top: 120px;
 	margin: 0 auto;
 }
 
-.container__experience-section {
+.main-container__experience-section {
 	margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+	.main-container {
+		padding: 120px 1.7rem;
+	}
 }
