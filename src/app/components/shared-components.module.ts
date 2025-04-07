@@ -33,6 +33,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 		ThemeToggleComponent,
 		ProfileCardComponent,
 		ExperienceTabsComponent,
+		SocialLinksComponent,
 	],
 })
 export class SharedComponentsModule {}

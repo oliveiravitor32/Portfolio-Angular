@@ -1,7 +1,7 @@
 .header {
 	width: 100%;
 	padding: 0.8rem 0;
-	background-color: var(--bg-secondary);
+	background-color: var(--bg-primary);
 	opacity: 0.9;
 	backdrop-filter: blur(150px);
 	position: fixed;
@@ -12,6 +12,7 @@
 
 .header__navbar {
 	width: var(--max-body-width);
+	padding: 0 1.2rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -39,7 +40,7 @@
 }
 
 @media screen and (max-width: 768px) {
-	.header {
-		padding: 0.8rem 1.7rem;
+	.header__navbar {
+		padding: 0 1.7rem;
 	}
 }

@@ -1,15 +1,15 @@
 .main-container {
 	max-width: var(--max-body-width);
-	padding-top: 120px;
+	padding: 120px 1.2rem 0 1.2rem;
 	margin: 0 auto;
 }
 
 .main-container__experience-section {
-	margin: 4rem 0;
+	margin: 4rem 0 2rem 0;
 }
 
 @media screen and (max-width: 768px) {
 	.main-container {
-		padding: 120px 1.7rem;
+		padding: 120px 1.7rem 0 1.7rem;
 	}
 }
