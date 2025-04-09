@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IProjectData } from 'src/app/interfaces/project-data.interface';
+import { IProjectItem } from 'src/app/interfaces/projects/project-item.interface';
 
 @Component({
 	selector: 'app-card-project',
@@ -7,5 +7,5 @@ import { IProjectData } from 'src/app/interfaces/project-data.interface';
 	styleUrls: ['./card-project.component.css'],
 })
 export class CardProjectComponent {
-	@Input() project: IProjectData = {} as IProjectData;
+	@Input() project: IProjectItem = {} as IProjectItem;
 }

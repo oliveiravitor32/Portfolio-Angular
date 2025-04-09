@@ -1,4 +1,4 @@
-export interface IProjectData {
+export interface IProjectItem {
 	img_url: string;
 	title: string;
 	description: string;

@@ -1,0 +1,42 @@
+<div class="projects">
+	<ul class="projects__list">
+		<li
+			class="projects__item"
+			*ngFor="let project of projectsData.projects; let i = index"
+		>
+			<div class="project-card">
+				<div class="project-card__image-wrapper">
+					<img
+						class="project-card__image"
+						ngSrc="{{ project.img_url }}"
+						width="360"
+						height="170"
+						[alt]="project.title"
+					/>
+				</div>
+				<div class="project-card__content">
+					<h3 class="project-card__title">{{ project.title }}</h3>
+					<p class="project-card__description">
+						{{ project.description }}
+					</p>
+					<div class="project-card__actions">
+						<a
+							href="{{ project.code_url }}"
+							class="project-card__button"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Código</a
+						>
+						<a
+							href="{{ project.demo_url }}"
+							class="project-card__button"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Demo</a
+						>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IProjectData } from 'src/app/interfaces/project-data.interface';
+import { IProjectItem } from 'src/app/interfaces/projects/project-item.interface';
 
 @Component({
 	selector: 'app-projects',
@@ -11,7 +11,7 @@ export class ProjectsComponent {
 	descriptionMain: string =
 		'Esta área apresenta alguns dos meus projetos mais elaborados.';
 
-	// project: IProjectData = {
+	// project: IProjectItem = {
 	// 	img_url: ,
 	// 	title: ,
 	// 	description:
@@ -20,7 +20,7 @@ export class ProjectsComponent {
 	// 	demo_url: ,
 	// };
 
-	project_game_library: IProjectData = {
+	project_game_library: IProjectItem = {
 		img_url: '../../../assets/project_game_library.png',
 		title: 'Biblioteca de jogos - Angular',
 		description:
@@ -30,7 +30,7 @@ export class ProjectsComponent {
 			'https://biblioteca-de-jogos-angular-oliveiravitor32s-projects.vercel.app/',
 	};
 
-	project_pokedex_angular: IProjectData = {
+	project_pokedex_angular: IProjectItem = {
 		img_url: '../../../assets/project_pokedex_angular.png',
 		title: 'Pokédex - Angular',
 		description:
@@ -39,7 +39,7 @@ export class ProjectsComponent {
 		demo_url: 'https://angular-pokedex-umber.vercel.app/',
 	};
 
-	project_note_app_angular: IProjectData = {
+	project_note_app_angular: IProjectItem = {
 		img_url: '../../../assets/project_note_app_angular.png',
 		title: 'Lista de tarefas - Angular',
 		description:
@@ -48,7 +48,7 @@ export class ProjectsComponent {
 		demo_url: 'https://note-app-oliveiravitor32.vercel.app/',
 	};
 
-	project_shopping_cart_react: IProjectData = {
+	project_shopping_cart_react: IProjectItem = {
 		img_url: '../../../assets/project_shopping_cart_react.png',
 		title: 'Carrinho de compras - React',
 		description:
@@ -57,7 +57,7 @@ export class ProjectsComponent {
 		demo_url: 'https://shopping-cart-reactjs-oliveiravitor32.vercel.app/',
 	};
 
-	project_to_do_list_react: IProjectData = {
+	project_to_do_list_react: IProjectItem = {
 		img_url: '../../../assets/project_to_do_list_react.png',
 		title: 'Lista de tarefas - React',
 		description:
@@ -66,7 +66,7 @@ export class ProjectsComponent {
 		demo_url: 'https://to-do-list-react-js-oliveiravitor32.vercel.app/',
 	};
 
-	project_old_portfolio: IProjectData = {
+	project_old_portfolio: IProjectItem = {
 		img_url: '../../../assets/project_old_porfolio.png',
 		title: 'Antigo portfólio',
 		description:
