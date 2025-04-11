@@ -21,6 +21,13 @@
 					<p class="project-card__description">
 						{{ project.description }}
 					</p>
+					<div class="project-card__technologies">
+						<span
+							class="project-card__technology"
+							*ngFor="let technology of project.technologies"
+							>{{ technology }}</span
+						>
+					</div>
 					<div class="project-card__actions">
 						<a
 							href="{{ project.code_url }}"

@@ -7,6 +7,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Biblioteca de jogos',
 			description:
 				'O projeto Biblioteca de Jogos é um website desenvolvido em Angular 17, integrado com a API RAWG Video Games Database.',
+			technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
 			code_url:
 				'https://github.com/oliveiravitor32/Biblioteca_de_Jogos-Angular',
 			demo_url:
@@ -17,6 +18,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Pokédex',
 			description:
 				'Projeto de uma pokédex contruída com Angular e com a PokeApi(API do pokemon).',
+			technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
 			code_url: 'https://github.com/oliveiravitor32/Pokedex-Angular',
 			demo_url: 'https://angular-pokedex-umber.vercel.app/',
 		},
@@ -25,6 +27,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Lista de tarefas',
 			description:
 				'Projeto Bloco de Notas (NoteApp) construído utilizando Angular com navegação de página única (single page application) e possibilita buscas por notas, criar, deletar e editar notas.',
+			technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
 			code_url: 'https://github.com/oliveiravitor32/Lista_de_tarefas-Angular',
 			demo_url: 'https://note-app-oliveiravitor32.vercel.app/',
 		},
@@ -33,6 +36,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Carrinho de compras',
 			description:
 				'Projeto Carrinho de Compras (Shopping Cart) construído com ReactJS utilizando a API do Mercado Livre, desenvolvido com o canal Manual do Dev no Youtube.',
+			technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
 			code_url: 'https://github.com/oliveiravitor32/Carrinho_de_compras-React',
 		},
 		{
@@ -40,6 +44,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Lista de tarefas',
 			description:
 				'Simples projeto de uma lista de tarefas (To Do List) utilizando ReactJS, que permite criar, concluir, editar, e também deletar tarefas.',
+			technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
 			code_url: 'https://github.com/oliveiravitor32/Lista_de_tarefas-React',
 			demo_url: 'https://to-do-list-react-js-oliveiravitor32.vercel.app/',
 		},
@@ -48,6 +53,7 @@ export const ProjectsData: IProjectsData = {
 			title: 'Antigo portfólio',
 			description:
 				'Meu antigo portfólio com página responsiva, implementações de animações via CSS e JS e com formulário funcional. Desenvolvido com o curso "Html-Css-Feliz" de Marco Bruno Dev no Youtube.',
+			technologies: ['HTML', 'CSS', 'JavaScript'],
 			code_url: 'https://github.com/oliveiravitor32/Antigo_Portfolio',
 			demo_url: 'https://oliveiravitor32.github.io/Antigo_Portfolio/',
 		},

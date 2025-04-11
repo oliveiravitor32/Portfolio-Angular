@@ -63,18 +63,34 @@
 	margin: 0;
 }
 
-.project-card__actions {
-	display: flex;
-	gap: 0.5rem;
+.project-card__technologies {
 	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
 }
 
-.project-card__button {
-	padding: 0.5rem 1rem;
-	font-size: 0.9rem;
+.project-card__technology {
+	font-size: 0.6rem;
 	font-weight: 600;
 	color: var(--text-primary);
 	background-color: var(--bg-secondary);
+	padding: 0.25rem 0.5rem;
+	border-radius: 5px;
+}
+
+.project-card__actions {
+	margin-top: 0.2rem;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.project-card__button {
+	padding: 0.3rem 0.7rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--bg-primary);
+	background-color: var(--text-primary);
 	border-radius: 5px;
 	text-align: center;
 	text-decoration: none;
