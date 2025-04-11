@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IProjectsData } from 'src/app/interfaces/projects/projects-data.interface';
 import { DataService } from 'src/app/service/data.service';
 
@@ -8,6 +8,7 @@ import { DataService } from 'src/app/service/data.service';
 	styleUrls: ['./my-projects.component.css'],
 })
 export class MyProjectsComponent implements OnInit {
+	@Input() limit: number = 0;
 	projectsData: IProjectsData = {} as IProjectsData;
 
 	constructor(private readonly _dataService: DataService) {}
@@ -18,5 +19,8 @@ export class MyProjectsComponent implements OnInit {
 
 	private fetchProjectsData(): void {
 		this.projectsData = this._dataService.getProjectsData();
+		if (this.limit === 0) {
+			this.limit = this.projectsData.projects.length;
+		}
 	}
 }

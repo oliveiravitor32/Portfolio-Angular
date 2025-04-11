@@ -18,9 +18,10 @@
 /*
 	Breakpoints
   --breakpoint-xs: 480px;
-	--breakpoint-sm: 768px;
-	--breakpoint-md: 1024px;
-	--breakpoint-lg: 1280px;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
 	--breakpoint-xl: 1440px;
 */
 
@@ -29,13 +30,13 @@ body.light-theme {
 	--bg-primary: #ffffff;
 	--bg-secondary: #e7e7e7;
 	--text-primary: #121212;
-	--text-secondary: #969696;
+	--text-secondary: #808080;
 }
 
 /* Dark theme */
 body.dark-theme {
 	--bg-primary: #121212;
-	--bg-secondary: #333333;
+	--bg-secondary: #202020;
 	--text-primary: #ffffff;
 	--text-secondary: #aaaaaa;
 }

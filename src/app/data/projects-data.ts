@@ -34,7 +34,6 @@ export const ProjectsData: IProjectsData = {
 			description:
 				'Projeto Carrinho de Compras (Shopping Cart) construído com ReactJS utilizando a API do Mercado Livre, desenvolvido com o canal Manual do Dev no Youtube.',
 			code_url: 'https://github.com/oliveiravitor32/Carrinho_de_compras-React',
-			demo_url: 'https://shopping-cart-reactjs-oliveiravitor32.vercel.app/',
 		},
 		{
 			img_url: '../../../assets/project_to_do_list_react.png',

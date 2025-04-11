@@ -3,5 +3,5 @@ export interface IProjectItem {
 	title: string;
 	description: string;
 	code_url: string;
-	demo_url: string;
+	demo_url?: string;
 }

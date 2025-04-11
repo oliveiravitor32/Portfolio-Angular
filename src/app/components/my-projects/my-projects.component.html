@@ -2,16 +2,18 @@
 	<ul class="projects__list">
 		<li
 			class="projects__item"
-			*ngFor="let project of projectsData.projects; let i = index"
+			*ngFor="
+				let project of projectsData.projects.slice(0, limit);
+				let i = index
+			"
 		>
 			<div class="project-card">
 				<div class="project-card__image-wrapper">
 					<img
 						class="project-card__image"
 						ngSrc="{{ project.img_url }}"
-						width="360"
-						height="170"
-						[alt]="project.title"
+						fill
+						[alt]="'Imagem do projeto ' + project.title"
 					/>
 				</div>
 				<div class="project-card__content">
@@ -28,6 +30,7 @@
 							>Código</a
 						>
 						<a
+							*ngIf="project.demo_url"
 							href="{{ project.demo_url }}"
 							class="project-card__button"
 							target="_blank"
