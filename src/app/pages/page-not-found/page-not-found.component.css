@@ -1,17 +1,33 @@
 .container {
 	min-height: 700px;
-	color: rgb(87, 204, 153);
 	display: flex;
 	font-weight: bold;
 	justify-content: center;
 	align-items: center;
 	font-size: 22px;
 	flex-direction: column;
-	background-color: rgb(34, 87, 122);
+	background-color: var(--bg-primary);
 	text-align: center;
 	gap: 10px;
 }
 
-a {
-	color: #19a994;
+.container__title {
+	color: var(--text-primary);
+	font-size: 2rem;
+}
+
+.container__subtitle {
+	color: var(--text-secondary);
+	font-size: 1rem;
+}
+
+.container__link {
+	color: var(--text-secondary);
+	text-decoration: underline;
+}
+
+.container__link:hover {
+	color: var(--text-primary);
+	text-decoration: underline;
+	cursor: pointer;
 }
