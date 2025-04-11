@@ -2,7 +2,6 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ArticleTitleAndDescriptionComponent } from './article-title-and-description/article-title-and-description.component';
 import { CardTecComponent } from './card-tec/card-tec.component';
-import { ContainerSocialMediaComponent } from './container-social-media/container-social-media.component';
 import { ExperienceTabsComponent } from './experience-tabs/experience-tabs.component';
 import { FeaturedProjectsComponent } from './featured-projects/featured-projects.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
@@ -16,7 +15,6 @@ import { TimelineComponent } from './timeline/timeline.component';
 	declarations: [
 		CardTecComponent,
 		ArticleTitleAndDescriptionComponent,
-		ContainerSocialMediaComponent,
 		ThemeToggleComponent,
 		ProfileCardComponent,
 		SocialLinksComponent,
@@ -30,7 +28,6 @@ import { TimelineComponent } from './timeline/timeline.component';
 	exports: [
 		CardTecComponent,
 		ArticleTitleAndDescriptionComponent,
-		ContainerSocialMediaComponent,
 		ThemeToggleComponent,
 		ProfileCardComponent,
 		ExperienceTabsComponent,
