@@ -8,13 +8,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { SharedComponentsModule } from './components/shared-components.module';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
 @NgModule({
 	declarations: [
 		AppComponent,
 		HomeComponent,
 		AboutComponent,
-		ProjectsComponent,
 		HeaderComponent,
 		FooterComponent,
 	],

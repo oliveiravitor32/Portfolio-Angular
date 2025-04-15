@@ -1,4 +1,18 @@
+.featured-projects__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.75rem;
+}
+
 .featured-projects__title {
 	color: var(--text-primary);
-	margin-bottom: 2rem;
+}
+
+.featured-projects__link {
+	font-size: 1.05rem;
+	color: var(--text-secondary);
+}
+
+.featured-projects__link:hover {
+	color: var(--text-primary);
 }

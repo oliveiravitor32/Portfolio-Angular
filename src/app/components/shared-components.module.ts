@@ -1,7 +1,7 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { ArticleTitleAndDescriptionComponent } from './article-title-and-description/article-title-and-description.component';
-import { CardTecComponent } from './card-tec/card-tec.component';
 import { ExperienceTabsComponent } from './experience-tabs/experience-tabs.component';
 import { FeaturedProjectsComponent } from './featured-projects/featured-projects.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
@@ -13,7 +13,6 @@ import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
 	declarations: [
-		CardTecComponent,
 		ArticleTitleAndDescriptionComponent,
 		ThemeToggleComponent,
 		ProfileCardComponent,
@@ -24,15 +23,15 @@ import { TimelineComponent } from './timeline/timeline.component';
 		MyProjectsComponent,
 		FeaturedProjectsComponent,
 	],
-	imports: [CommonModule, NgOptimizedImage],
+	imports: [CommonModule, NgOptimizedImage, RouterModule],
 	exports: [
-		CardTecComponent,
 		ArticleTitleAndDescriptionComponent,
 		ThemeToggleComponent,
 		ProfileCardComponent,
 		ExperienceTabsComponent,
 		SocialLinksComponent,
 		FeaturedProjectsComponent,
+		MyProjectsComponent,
 	],
 })
 export class SharedComponentsModule {}

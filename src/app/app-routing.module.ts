@@ -5,8 +5,12 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
-	// { path: 'projetos', component: ProjectsComponent },
 	{ path: 'sobre', component: AboutComponent },
+	{
+		path: 'projetos',
+		loadChildren: () =>
+			import('./pages/projects/projects.module').then((m) => m.ProjectsModule),
+	},
 	{
 		path: '**',
 		loadChildren: () =>
@@ -17,7 +21,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [
+		RouterModule.forRoot(routes, {
+			scrollPositionRestoration: 'enabled',
+		}),
+	],
 	exports: [RouterModule],
 })
 export class AppRoutingModule {}
