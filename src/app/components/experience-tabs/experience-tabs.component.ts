@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IEducationData } from 'src/app/interfaces/education/education-data.interface';
-import { DataService } from 'src/app/service/data.service';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
 	selector: 'app-experience-tabs',
