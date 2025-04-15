@@ -10,10 +10,21 @@
 	transition: background-color 0.3s;
 }
 
-.theme-toggle:hover {
-	background-color: var(--hover-bg);
+.theme-toggle__icon {
+	width: 2.3rem;
+	height: 2.3rem;
+	padding: 0.4rem;
+	border-radius: 10px;
 }
 
-.icon {
-	font-size: 1.2rem;
+.theme-toggle__icon--light {
+	fill: rgb(234, 234, 39);
+}
+
+.theme-toggle__icon--dark {
+	fill: rgb(86, 119, 201);
+}
+
+.theme-toggle__icon:hover {
+	background-color: var(--bg-secondary);
 }

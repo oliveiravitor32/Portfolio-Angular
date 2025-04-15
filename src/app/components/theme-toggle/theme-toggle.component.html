@@ -2,9 +2,26 @@
 	class="theme-toggle"
 	(click)="toggleTheme()"
 	[attr.aria-label]="
-		isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+		isDarkMode ? 'Mudar para modo claro' : 'Mudar para modo escuro'
 	"
+	[title]="isDarkMode ? 'Mudar para modo claro' : 'Mudar para modo escuro'"
 >
-	<span class="icon" *ngIf="isDarkMode">☀️</span>
-	<span class="icon" *ngIf="!isDarkMode">🌙</span>
+	<span class="theme-toggle__icon-wrapper" *ngIf="isDarkMode">
+		<svg
+			[ngClass]="isDarkMode ? 'theme-toggle__icon--light' : ''"
+			class="theme-toggle__icon"
+			aria-hidden="true"
+		>
+			<use xlink:href="assets/icons/sun-icon.svg#sun-icon"></use>
+		</svg>
+	</span>
+	<span class="theme-toggle__icon-wrapper" *ngIf="!isDarkMode">
+		<svg
+			[ngClass]="isDarkMode ? '' : 'theme-toggle__icon--dark'"
+			class="theme-toggle__icon"
+			aria-hidden="true"
+		>
+			<use xlink:href="assets/icons/moon-icon.svg#moon-icon"></use>
+		</svg>
+	</span>
 </button>
