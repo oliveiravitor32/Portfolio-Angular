@@ -1,11 +1,7 @@
 <header class="header">
 	<nav class="header__navbar">
-		<div
-			class="header__links-wrapper"
-			[ngClass]="{ 'mobile-menu-open': isMobileMenuOpen }"
-		>
+		<div class="header__links-wrapper">
 			<a class="header__link" routerLink="/">Inicio</a>
-			<a class="header__link" routerLink="/sobre">Sobre</a>
 			<a class="header__link" routerLink="/projetos">Projetos</a>
 		</div>
 		<app-theme-toggle></app-theme-toggle>
