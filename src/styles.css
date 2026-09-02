@@ -5,14 +5,34 @@
 	list-style: none;
 	text-decoration: none;
 	vertical-align: baseline;
-	font-family: "Inter", sans-serif;
+	font-family: var(--font-family);
 	box-sizing: border-box;
 }
 
 :root {
+	/* Typography */
+	--font-family: "Hanken Grotesk", system-ui, sans-serif;
+	--font-weight-light: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 600;
+
+	/* Spacing scale (4px steps) */
+	--sp-1: 4px;
+	--sp-2: 8px;
+	--sp-3: 12px;
+	--sp-4: 16px;
+	--sp-5: 20px;
+	--sp-6: 24px;
+	--sp-8: 32px;
+	--sp-10: 40px;
+	--sp-12: 48px;
+	--sp-16: 64px;
+
 	/* Common variables (used in both themes) */
-	--transition-speed: 0.3s;
-	--max-body-width: 768px;
+	--transition-speed: 0.35s;
+	--transition-timing: cubic-bezier(0.41, 0.1, 0.13, 1);
+	--viewport-padding: var(--sp-8);
+	--max-body-width: 1024px;
 }
 
 /*
@@ -25,26 +45,104 @@
 	--breakpoint-xl: 1440px;
 */
 
+/*
+	Escala de cinzas com matiz azul (210deg) em vez de cinza puro.
+	É isso que dá a coesão do conjunto — nenhum neutro é dessaturado.
+*/
+
 /* Light theme (default) */
 body.light-theme {
-	--bg-primary: #ffffff;
-	--bg-secondary: #e7e7e7;
-	--text-primary: #121212;
-	--text-secondary: #808080;
+	--gray-50: hsl(210deg 25% 98%);
+	--gray-100: hsl(210deg 20% 95%);
+	--gray-200: hsl(210deg 18% 90%);
+	--gray-300: hsl(210deg 15% 80%);
+	--gray-500: hsl(210deg 10% 55%);
+	--gray-700: hsl(210deg 12% 38%);
+	--gray-900: hsl(210deg 15% 15%);
+
+	--bg-primary: hsl(210deg 25% 99%);
+	--bg-secondary: hsl(210deg 20% 94%);
+	--text-primary: hsl(210deg 15% 15%);
+	--text-secondary: hsl(210deg 10% 45%);
+
+	--accent: hsl(240deg 95% 62%);
+	--accent-soft: hsl(240deg 95% 62% / 0.09);
+	--secondary: hsl(340deg 95% 45%);
+	--success: hsl(160deg 100% 32%);
+	--border: hsl(210deg 18% 90%);
+	--selection-bg: hsl(50deg 100% 65%);
+	--selection-text: hsl(210deg 15% 10%);
 }
 
 /* Dark theme */
 body.dark-theme {
-	--bg-primary: #121212;
-	--bg-secondary: #202020;
-	--text-primary: #ffffff;
-	--text-secondary: #aaaaaa;
+	--gray-50: hsl(210deg 19% 9%);
+	--gray-100: hsl(210deg 15% 12%);
+	--gray-200: hsl(210deg 15% 18%);
+	--gray-300: hsl(210deg 10% 30%);
+	--gray-500: hsl(210deg 8% 50%);
+	--gray-700: hsl(210deg 14% 66%);
+	--gray-900: hsl(210deg 25% 88%);
+
+	--bg-primary: hsl(210deg 15% 6%);
+	--bg-secondary: hsl(213deg 40% 10%);
+	--text-primary: hsl(210deg 10% 90%);
+	--text-secondary: hsl(210deg 12% 55%);
+
+	--accent: hsl(225deg 100% 75%);
+	--accent-soft: hsl(225deg 100% 75% / 0.1);
+	--secondary: hsl(333deg 100% 55%);
+	--success: hsl(160deg 100% 40%);
+	--border: hsl(210deg 15% 18%);
+	--selection-bg: hsl(50deg 100% 65%);
+	--selection-text: hsl(210deg 15% 6%);
 }
 
 /* Set default theme */
 body {
 	background-color: var(--bg-primary);
 	color: var(--text-primary);
-	transition: background-color var(--transition-speed),
-		color var(--transition-speed);
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: var(--font-weight-light);
+	-webkit-font-smoothing: antialiased;
+	transition:
+		background-color var(--transition-speed) var(--transition-timing),
+		color var(--transition-speed) var(--transition-timing);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: var(--font-weight-bold);
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+}
+
+::selection {
+	background-color: var(--selection-bg);
+	color: var(--selection-text);
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+/* Chip de tecnologia — compartilhada entre o perfil e os cards de projeto */
+.tech-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--sp-2);
+}
+
+.tech-chip {
+	padding: var(--sp-1) var(--sp-2);
+	border-radius: 5px;
+	background-color: var(--accent-soft);
+	color: var(--accent);
+	font-size: 0.75rem;
+	font-weight: var(--font-weight-bold);
+	line-height: 1.4;
 }

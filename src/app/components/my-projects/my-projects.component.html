@@ -7,7 +7,7 @@
 				let i = index
 			"
 		>
-			<div class="project-card">
+			<article class="project-card">
 				<div class="project-card__image-wrapper">
 					<img
 						class="project-card__image"
@@ -16,37 +16,59 @@
 						[alt]="'Imagem do projeto ' + project.title"
 					/>
 				</div>
+
 				<div class="project-card__content">
 					<h3 class="project-card__title">{{ project.title }}</h3>
+
 					<p class="project-card__description">
 						{{ project.description }}
 					</p>
-					<div class="project-card__technologies">
-						<span
-							class="project-card__technology"
+
+					<ul
+						class="project-card__technologies tech-chips"
+						aria-label="Tecnologias usadas"
+					>
+						<li
+							class="tech-chip"
 							*ngFor="let technology of project.technologies"
-							>{{ technology }}</span
 						>
-					</div>
-					<div class="project-card__actions">
+							{{ technology }}
+						</li>
+					</ul>
+
+					<footer class="project-card__footer">
 						<a
+							class="project-card__link"
 							href="{{ project.code_url }}"
-							class="project-card__button"
 							target="_blank"
 							rel="noopener noreferrer"
-							>Código</a
+							[attr.aria-label]="'Ver o código de ' + project.title"
 						>
+							<svg class="project-card__link-icon" aria-hidden="true">
+								<use xlink:href="assets/icons/code-icon.svg#code-icon"></use>
+							</svg>
+							Código
+						</a>
 						<a
 							*ngIf="project.demo_url"
+							class="project-card__link"
 							href="{{ project.demo_url }}"
-							class="project-card__button"
 							target="_blank"
 							rel="noopener noreferrer"
-							>Demo</a
-						>
-					</div>
+							[attr.aria-label]="'Abrir a demo de ' + project.title"
+							>Demo
+							<svg
+								class="project-card__link-icon project-card__link-icon--arrow"
+								aria-hidden="true"
+							>
+								<use
+									xlink:href="assets/icons/arrow-up-right-icon.svg#arrow-up-right-icon"
+								></use>
+							</svg>
+						</a>
+					</footer>
 				</div>
-			</div>
+			</article>
 		</li>
 	</ul>
 </div>
