@@ -22,5 +22,11 @@ export const EducationData: IEducationData = {
 			status: 'Em andamento',
 			logoUrl: 'assets/logos/udemy-logo.png',
 		},
+		{
+			institution_name: 'Alura',
+			program_title: 'UX Design: Mapeamentos estratégicos',
+			status: 'Concluído',
+			logoUrl: 'assets/logos/alura-logo.jpg',
+		},
 	],
 };
