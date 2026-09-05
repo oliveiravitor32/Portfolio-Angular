@@ -1,8 +1,23 @@
 <div class="tabs">
-	<div class="tabs__header">
-		<button class="tabs__button" type="button" role="tab">Educação</button>
+	<div class="tabs__header" role="tablist">
+		<button
+			*ngFor="let tab of tabs"
+			class="tabs__button"
+			[class.tabs__button--active]="activeTab === tab.id"
+			[attr.aria-selected]="activeTab === tab.id"
+			[id]="'tab-' + tab.id"
+			type="button"
+			role="tab"
+			(click)="selectTab(tab.id)"
+		>
+			{{ tab.label }}
+		</button>
 	</div>
-	<div class="tabs__content" role="tabpanel">
-		<app-timeline [educationData]="educationData"></app-timeline>
+	<div
+		class="tabs__content"
+		role="tabpanel"
+		[attr.aria-labelledby]="'tab-' + activeTab"
+	>
+		<app-timeline [items]="activeItems"></app-timeline>
 	</div>
 </div>

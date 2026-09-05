@@ -15,7 +15,8 @@
 	border-radius: 50%;
 	object-fit: cover;
 	border: 3px solid var(--border);
-	transition: transform var(--transition-speed),
+	transition:
+		transform var(--transition-speed),
 		border-color var(--transition-speed);
 }
 

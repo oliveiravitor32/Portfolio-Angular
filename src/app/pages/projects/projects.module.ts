@@ -3,9 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedComponentsModule } from 'src/app/components/shared-components.module';
 import { ProjectsComponent } from './projects.component';
 
-const routes: Routes = [
-	{ path: '', component: ProjectsComponent }, // Default route
-];
+const routes: Routes = [{ path: '', component: ProjectsComponent }];
 
 @NgModule({
 	declarations: [ProjectsComponent],

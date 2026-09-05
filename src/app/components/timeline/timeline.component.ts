@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IEducationData } from 'src/app/interfaces/education/education-data.interface';
+import { ITimelineItem } from 'src/app/interfaces/timeline/timeline-item.interface';
 
 @Component({
 	selector: 'app-timeline',
@@ -7,5 +7,5 @@ import { IEducationData } from 'src/app/interfaces/education/education-data.inte
 	styleUrls: ['./timeline.component.css'],
 })
 export class TimelineComponent {
-	@Input({ required: true }) educationData!: IEducationData;
+	@Input({ required: true }) items!: ITimelineItem[];
 }

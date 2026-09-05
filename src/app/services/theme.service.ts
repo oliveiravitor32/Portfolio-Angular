@@ -15,13 +15,11 @@ export class ThemeService {
 	}
 
 	private initTheme(): void {
-		// Check if user has already selected a theme
 		const storedTheme = localStorage.getItem('theme');
 		const prefersDark =
 			window.matchMedia &&
 			window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-		// Set initial theme based on stored preference or system preference
 		if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
 			this.setDarkMode(true);
 		} else {

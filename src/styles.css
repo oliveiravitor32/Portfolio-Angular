@@ -10,13 +10,11 @@
 }
 
 :root {
-	/* Typography */
 	--font-family: "Hanken Grotesk", system-ui, sans-serif;
 	--font-weight-light: 400;
 	--font-weight-medium: 500;
 	--font-weight-bold: 600;
 
-	/* Spacing scale (4px steps) */
 	--sp-1: 4px;
 	--sp-2: 8px;
 	--sp-3: 12px;
@@ -28,29 +26,12 @@
 	--sp-12: 48px;
 	--sp-16: 64px;
 
-	/* Common variables (used in both themes) */
 	--transition-speed: 0.35s;
 	--transition-timing: cubic-bezier(0.41, 0.1, 0.13, 1);
 	--viewport-padding: var(--sp-8);
 	--max-body-width: 1024px;
 }
 
-/*
-	Breakpoints
-  --breakpoint-xs: 480px;
-	--breakpoint-sm: 640px;
-	--breakpoint-md: 768px;
-	--breakpoint-lg: 1024px;
-	--breakpoint-xl: 1280px;
-	--breakpoint-xl: 1440px;
-*/
-
-/*
-	Escala de cinzas com matiz azul (210deg) em vez de cinza puro.
-	É isso que dá a coesão do conjunto — nenhum neutro é dessaturado.
-*/
-
-/* Light theme (default) */
 body.light-theme {
 	--gray-50: hsl(210deg 25% 98%);
 	--gray-100: hsl(210deg 20% 95%);
@@ -74,7 +55,6 @@ body.light-theme {
 	--selection-text: hsl(210deg 15% 10%);
 }
 
-/* Dark theme */
 body.dark-theme {
 	--gray-50: hsl(210deg 19% 9%);
 	--gray-100: hsl(210deg 15% 12%);
@@ -98,7 +78,6 @@ body.dark-theme {
 	--selection-text: hsl(210deg 15% 6%);
 }
 
-/* Set default theme */
 body {
 	background-color: var(--bg-primary);
 	color: var(--text-primary);
@@ -130,7 +109,6 @@ h3 {
 	border-radius: 2px;
 }
 
-/* Chip de tecnologia — compartilhada entre o perfil e os cards de projeto */
 .tech-chips {
 	display: flex;
 	flex-wrap: wrap;

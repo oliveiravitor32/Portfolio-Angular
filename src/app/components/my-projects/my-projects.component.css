@@ -30,7 +30,6 @@
 	border-color: var(--gray-300);
 }
 
-/* Imagem sangrando até a borda, sem padding */
 .project-card__image-wrapper {
 	position: relative;
 	aspect-ratio: 16 / 10;
@@ -75,7 +74,6 @@
 	overflow: hidden;
 }
 
-/* Rodapé separado por uma linha, empurrado para baixo */
 .project-card__footer {
 	display: flex;
 	align-items: center;

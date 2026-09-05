@@ -1,22 +1,43 @@
-import { Component } from '@angular/core';
-import { IEducationData } from 'src/app/interfaces/education/education-data.interface';
+import { Component, OnInit } from '@angular/core';
+import { ITimelineItem } from 'src/app/interfaces/timeline/timeline-item.interface';
 import { DataService } from 'src/app/services/data.service';
+
+type TabId = 'experience' | 'education';
 
 @Component({
 	selector: 'app-experience-tabs',
 	templateUrl: './experience-tabs.component.html',
 	styleUrls: ['./experience-tabs.component.css'],
 })
-export class ExperienceTabsComponent {
-	educationData!: IEducationData;
+export class ExperienceTabsComponent implements OnInit {
+	readonly tabs: { id: TabId; label: string }[] = [
+		{ id: 'experience', label: 'Experiência' },
+		{ id: 'education', label: 'Educação' },
+	];
+
+	activeTab: TabId = 'experience';
+
+	experienceItems!: ITimelineItem[];
+	educationItems!: ITimelineItem[];
 
 	constructor(private _dataService: DataService) {}
 
 	ngOnInit(): void {
-		this.fetchEducationData();
+		this.fetchTimelineData();
 	}
 
-	private fetchEducationData(): void {
-		this.educationData = this._dataService.getEducationData();
+	selectTab(tabId: TabId): void {
+		this.activeTab = tabId;
+	}
+
+	get activeItems(): ITimelineItem[] {
+		return this.activeTab === 'experience'
+			? this.experienceItems
+			: this.educationItems;
+	}
+
+	private fetchTimelineData(): void {
+		this.experienceItems = this._dataService.getExperienceTimeline();
+		this.educationItems = this._dataService.getEducationTimeline();
 	}
 }
